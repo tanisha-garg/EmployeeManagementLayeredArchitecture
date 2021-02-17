@@ -21,7 +21,7 @@ public class EmployeeUI {
 		try {
 			Employee tanisha = service.add("Tanisha", "Developer");
 			Employee srinidhi = service.add("Srinidhi", "Tester");
-			Employee sindhuja = service.add("Sundhuja", "Human Resource");
+			Employee sindhuja = service.add("Sindhuja", "Human Resource");
 			
 			display(tanisha);
 			display(srinidhi);
@@ -30,7 +30,7 @@ public class EmployeeUI {
 			Employee fetchEmployee = service.findById(1);
 			display(fetchEmployee);
 			
-			Employee removeEmployee = service.removeById(2);
+			service.removeById(2);
 			List<Employee>list = service.findAll();
 			displayAll(list);
 			
@@ -40,6 +40,8 @@ public class EmployeeUI {
 			System.out.println(e.getMessage());
 		}catch(InvalidDepartmentException e) {
 			System.out.println(e.getMessage());
+		}catch(Exception e) {
+			System.out.println("Something went wrong");
 		}
 		
 		

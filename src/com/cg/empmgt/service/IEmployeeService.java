@@ -5,7 +5,7 @@ import java.util.*;
 
 public interface IEmployeeService {
 	
-	Employee add(String name, String Department);
+	Employee add(String name, String department);
 	
 	Employee findById(int id);
 	

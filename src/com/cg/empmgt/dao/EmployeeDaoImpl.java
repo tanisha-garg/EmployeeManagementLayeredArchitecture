@@ -5,7 +5,7 @@ import java.util.*;
 
 public class EmployeeDaoImpl implements IEmployeeDao{
 	
-	private int generatedId = 0;
+	private int generatedId;
 	
 	public int generateId() {
 		generatedId++;
