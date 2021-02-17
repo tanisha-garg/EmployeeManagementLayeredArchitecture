@@ -15,28 +15,28 @@ public class Employee {
 		this.setDepartment(department);
 	}
 	
-	public void getId() {
-		this.id = id;
-	}
-	
-	public int setId(int id) {
+	public int getId() {
 		return id;
 	}
 	
-	public void getName() {
-		this.name = name;
+	public void setId(int id) {
+		this.id = id;
 	}
 	
-	public String setName(String name) {
+	public String getName() {
 		return name;
 	}
 	
-	public void getDepartment() {
-		this.department = department;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public String setDepartment(String department) {
+	public String getDepartment() {
 		return department;
+	}
+	
+	public void setDepartment(String department) {
+		this.department = department;
 	}
 	
 	@Override	
