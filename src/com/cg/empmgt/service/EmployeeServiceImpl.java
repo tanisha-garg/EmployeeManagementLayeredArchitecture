@@ -49,7 +49,7 @@ public class EmployeeServiceImpl implements IEmployeeService{
 	
 	public void validateName(String name) {
 		if(name == null || name.isEmpty() || name.length()>10) {
-			throw new InvalidNameException("Name cannot be null or empty or less than 10");
+			throw new InvalidEmployeeNameException("Name cannot be null or empty or less than 10");
 		}
 	}
 	

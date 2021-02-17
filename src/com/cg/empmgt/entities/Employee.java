@@ -41,7 +41,7 @@ public class Employee {
 	
 	@Override	
 	public String toString() {
-		String text = "Id: "+id+" Name: "+name+" Department: "+department;
+		String text = "Name: "+name+" Department: "+department;
 		return text;
 	}
 	
